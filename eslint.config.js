@@ -25,7 +25,11 @@ export default tseslint.config(
 			],
 			quotes: ['error', 'single'],
 			semi: ['error', 'always'],
-			'comma-dangle': ['error', 'never']
+			'comma-dangle': ['error', 'never'],
+			'@typescript-eslint/no-require-imports': [
+				'error',
+				{ allow: 'tailwind.config.js' }
+			]
 		}
 	}
 );
